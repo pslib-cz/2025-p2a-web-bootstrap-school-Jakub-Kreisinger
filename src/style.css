@@ -1,96 +1,120 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
+/* Globální nastavení */
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f9fa; /* světle šedé pozadí */
+  color: #212529;
+  line-height: 1.6;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+/* Navbar */
+.navbar {
+  background-color: #ffffff !important;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.navbar-brand {
+  color: #ff6600 !important; /* oranžové logo */
+  font-weight: bold;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #3178c6aa);
+.navbar-nav .nav-link {
+  color: #333 !important;
+  transition: 0.3s;
 }
 
+.navbar-nav .nav-link:hover {
+  color: #ff6600 !important;
+}
+
+/* Hero */
+header h1 {
+  color: #333;
+  font-size: 1.6rem;
+}
+
+header p {
+  font-size: 1rem;
+  color: #666;
+}
+
+header .btn-primary {
+  background-color: #ff6600;
+  border: none;
+}
+
+header .btn-primary:hover {
+  background-color: #e05500;
+}
+
+header .btn-outline-primary {
+  color: #ff6600;
+  border-color: #ff6600;
+}
+
+header .btn-outline-primary:hover {
+  background-color: #ff6600;
+  color: #fff;
+}
+
+/* Sekce nadpisy */
+section h2 {
+  color: #ff6600;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Karty oborů a novinek */
 .card {
-  padding: 2em;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
 }
 
-.read-the-docs {
-  color: #888;
+.card:hover {
+  transform: scale(1.02);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/* Události */
+.list-group-item {
+  border: none;
+  border-left: 4px solid #ff6600;
+  background-color: #fff;
+  margin-bottom: 6px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* Galerie */
+img.img-fluid {
+  border-radius: 12px;
+}
+
+/* FAQ (accordion) */
+.accordion-button {
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #ff6600;
+  color: #fff;
+}
+
+/* Kontakt - formulář */
+form .btn-primary {
+  background-color: #ff6600;
+  border: none;
+}
+
+form .btn-primary:hover {
+  background-color: #e05500;
+}
+
+/* Footer */
+footer {
+  background-color: #222 !important;
+  color: #ccc;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
 }
