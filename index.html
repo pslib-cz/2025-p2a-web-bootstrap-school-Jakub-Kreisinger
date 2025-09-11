@@ -96,3 +96,63 @@
 
 <!-- Události -->
 <section id="udalosti" class="container my-5">
+  <h2 class="mb-4">Nadcházející události</h2>
+  <ul class="list-group mb-3">
+    <li class="list-group-item">12. září – Den otevřených dveří</li>
+    <li class="list-group-item">27. září – Exkurze do Prahy</li>
+  </ul>
+</section>
+
+<!-- Galerie -->
+<section id="galerie" class="container my-5 text-center">
+  <h2 class="mb-4">Galerie</h2>
+  <img src="https://via.placeholder.com/800x400" class="img-fluid rounded shadow mb-3" alt="galerie">
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="container my-5">
+  <h2 class="mb-4">Časté dotazy</h2>
+  <div class="accordion" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+          Jak se mohu přihlásit?
+        </button>
+      </h2>
+      <div id="q1" class="accordion-collapse collapse show">
+        <div class="accordion-body">Přihlášku naleznete na webu v sekci Přihlášky.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Kontakt -->
+<section id="kontakt" class="container my-5">
+  <h2 class="mb-4">Napište nám</h2>
+  <p>Pokud máte zájem o studium, můžete nás kontaktovat prostřednictvím formuláře:</p>
+  <form>
+    <div class="mb-3">
+      <label for="jmeno" class="form-label">Jméno</label>
+      <input type="text" class="form-control" id="jmeno" required>
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">E-mail</label>
+      <input type="email" class="form-control" id="email" required>
+    </div>
+    <div class="mb-3">
+      <label for="zprava" class="form-label">Zpráva</label>
+      <textarea class="form-control" id="zprava" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Odeslat</button>
+  </form>
+</section>
+
+
+<footer class="bg-dark text-light text-center p-4 mt-5">
+  <p class="mb-0">&copy; 2025 SOŠ Digital | Všechna práva vyhrazena</p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
