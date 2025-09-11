@@ -11,7 +11,8 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="src/images/logo.svg">SOŠ Digital</a>
+   <a class="navbar-brand" href="index.html">
+        <img src="src/images/logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />SOŠ Digital </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -32,14 +33,12 @@
 <header id="hero" class="bg-light py-5">
   <div class="container">
     <div class="row align-items-center">
-      <!-- Text -->
       <div class="col-lg-6 text-center text-lg-start">
         <h1 class="fw-bold display-5">Střední odborná škola Digital</h1>
         <p class="text-muted fs-5 mb-4">Moderní vzdělávání v IT, grafice a digitálních médiích.</p>
         <a href="#obory" class="btn btn-primary btn-lg me-2 mb-2">Studijní obory</a>
         <a href="#kontakt" class="btn btn-outline-primary btn-lg mb-2">Přihlásit se</a>
       </div>
-      <!-- Obrázek -->
       <div class="col-lg-6 mt-4 mt-lg-0 text-center">
         <img src="src/images/hero-image.webp" class="img-fluid rounded-3 shadow-lg" alt="hero">
       </div>
@@ -123,7 +122,7 @@
       <span class="fw-bold">27 říj</span> <span>Přednáška – Kyberbezpečnost v praxi</span>
     </li>
     <li class="list-group-item d-flex justify-content-between">
-      <span class="fw-bold">6 lis</span> <span>Přednáška – Kyberbezpečnost v praxi</span>
+      <span class="fw-bold">6 lis</span> <span>Den otevřených dveří</span>
     </li>
   </ul>
 </section>
@@ -131,7 +130,37 @@
 <!-- Galerie -->
 <section id="galerie" class="container my-5 text-center">
   <h2 class="mb-4 fw-bold border-bottom pb-2">Galerie</h2>
-  <img src="src/images/aula.webp" class="img-fluid rounded-3 shadow-lg" alt="galerie">
+
+  <div id="galerieCarousel" class="carousel slide shadow-lg rounded-3" data-bs-ride="carousel">
+
+    <!-- Obrázky -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="src/images/aula.webp" class="d-block w-100 rounded-3" alt="aula">
+      </div>
+      <div class="carousel-item">
+        <img src="src/images/BE-trida.webp" class="d-block w-100 rounded-3" alt="druhá fotka">
+      </div>
+      <div class="carousel-item">
+        <img src="src/images/BS-dilna.webp" class="d-block w-100 rounded-3" alt="třetí fotka">
+      </div>
+    </div>
+
+    <!-- Číslované indikátory pod fotkami -->
+    <div class="carousel-indicators position-static mt-3">
+      <button type="button" data-bs-target="#galerieCarousel" data-bs-slide-to="0" class="active btn btn-primary mx-1">1</button>
+      <button type="button" data-bs-target="#galerieCarousel" data-bs-slide-to="1" class="btn btn-primary mx-1">2</button>
+      <button type="button" data-bs-target="#galerieCarousel" data-bs-slide-to="2" class="btn btn-primary mx-1">3</button>
+    </div>
+
+    <!-- Ovládací šipky -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#galerieCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#galerieCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
 </section>
 
 <!-- FAQ -->
